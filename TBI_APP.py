@@ -130,7 +130,7 @@ if menu_label == 'Home':
    
     st.write("") 
        
-    with open("/Users/apple/Desktop/brain-imaging.json", "r") as f:
+    with open("brain-imaging.json", "r") as f:
             lottie_json = json.load(f)
             st_lottie(lottie_json, height=600, width=800)
 
@@ -370,22 +370,22 @@ if menu_label == "Overview":
         col1, col2, col3, col4 = st.columns(4)
     
         with col1: 
-           with open("/Users/apple/Desktop/doctor.json", "r") as f:
+           with open("doctor.json", "r") as f:
              lottie_json = json.load(f)
              st_lottie(lottie_json, height=400)
              
         with col2: 
-           with open("/Users/apple/Desktop/brain1.json", "r") as f:
+           with open("brain1.json", "r") as f:
              lottie_json = json.load(f)
              st_lottie(lottie_json, height=400)
              
         with col3: 
-           with open("/Users/apple/Desktop/brain2.json", "r") as f:
+           with open("brain2.json", "r") as f:
               lottie_json = json.load(f)
               st_lottie(lottie_json, height=400)
               
         with col4: 
-           with open("/Users/apple/Desktop/brain3.json", "r") as f:
+           with open("brain3.json", "r") as f:
               lottie_json = json.load(f)
               st_lottie(lottie_json, height=400)
               
@@ -431,8 +431,8 @@ if menu_label == "Statistics":
         # Add an empty space to create a gap between the rows
         st.write("")
         # Load the gender icons
-        boy_icon = Image.open("/Users/apple/Desktop/boy-2.png")
-        girl_icon = Image.open("/Users/apple/Desktop/girl.png")
+        boy_icon = Image.open("boy-2.png")
+        girl_icon = Image.open("girl.png")
         st.write("")
        # Set first 3 sets of visuals
         viz1 = st.columns(2)
@@ -1129,7 +1129,7 @@ if menu_label == "Statistics":
               
               
         with viz5[1]:
-           with open("/Users/apple/Desktop/people.json", "r") as f:
+           with open("people.json", "r") as f:
               lottie_json = json.load(f)
               st_lottie(lottie_json, height=500)
               
@@ -1207,7 +1207,7 @@ if menu_label == "Prevention":
         <div style="padding-top: 40px;"></div>
         """, unsafe_allow_html=True)
         # Animation1 about children 0-14 years
-        with open("/Users/apple/Desktop/student.json", "r") as f:
+        with open("student.json", "r") as f:
             lottie_json = json.load(f)
             st_lottie(lottie_json, height=400)
             st.caption(f"""
@@ -1221,7 +1221,7 @@ Place guards, gates, and screens around windows and stairs. </div>""",unsafe_all
     with col2:
         st.subheader("Teens and young adults are at a high risk of sports and recreational activity injuries that cause TBI")
         # Animation2 about teens and young adults
-        with open("/Users/apple/Desktop/soccer.json", "r") as f:
+        with open("soccer.json", "r") as f:
             lottie_json = json.load(f)
             st_lottie(lottie_json, height=400)
             st.caption(f"""
@@ -1244,7 +1244,7 @@ Implement rule changes (such as those limiting body checking or ball heading). <
         <div style="padding-top: 0px;"></div>
         """, unsafe_allow_html=True)
         # Animation3 about teens and young adults
-        with open("/Users/apple/Desktop/delivery.json", "r") as f:
+        with open("delivery.json", "r") as f:
             lottie_json = json.load(f)
             st_lottie(lottie_json, height=399)
             st.caption(f"""
@@ -1271,7 +1271,7 @@ Continue to develop advances in automobile engineering, such as antilock brakes 
         <div style="padding-top: 35px;"></div>
         """, unsafe_allow_html=True)
         # Animation4 about older adults
-        with open("/Users/apple/Desktop/old-man.json", "r") as f:
+        with open("old-man.json", "r") as f:
             lottie_json = json.load(f)
             st_lottie(lottie_json, height=400)
             st.caption(f"""
